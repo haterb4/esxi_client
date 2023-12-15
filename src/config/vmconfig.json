@@ -1,0 +1,70 @@
+{
+    "createNewVM": {
+        "vm_name": "bradVm",
+        "esx_ip": "localhost.localdomain",
+        "datastore_name": "datastore1",
+        "datacenter_name": "ha-datacenter"
+    },
+    "createVMFromISO": {
+        "vm_name": "bradVmISO",
+        "datastore_name": "datastore1",
+        "datacenter_name": "ha-datacenter",
+        "esx_ip": "localhost.localdomain",
+        "resource_pool": null,
+        "cluster_name": null,
+        "iso": "[datastore1] Core-5.4.iso",
+        "name": "Name0",
+        "annotation": "Description de la VM",
+        "memoryMB": 1024,
+        "numCPUs": 1,
+        "numCoresPerSocket": 1,
+        "cpuHotAddEnabled": true,
+        "memoryHotAddEnabled": true
+    },
+    "createVMFromISO2": {
+        "vm_name": "anzieVmISO",
+        "datastore_name": "datastore1",
+        "datacenter_name": "ha-datacenter",
+        "esx_ip": "localhost.localdomain",
+        "resource_pool": null,
+        "cluster_name": null,
+        "iso_file": "[datastore1] Core-5.4.iso",
+        "name": "Name0",
+        "annotation": "Description de la VM",
+        "memoryMB": 1024,
+        "numCPUs": 1,
+        "numCoresPerSocket": 1,
+        "cpuHotAddEnabled": true,
+        "memoryHotAddEnabled": true
+    },
+    "createVMFromOVA": {
+        "vm_name": "bradVmOva",
+        "esx_ip": "localhost.localdomain",
+        "ova_path": "C:/Users/bradley/Documents/5GI/Cloud/Project/esx/src/resources/ova/yVM.ova",
+        "datacenter_name": null,
+        "resource_pool": null,
+        "datastore_name": null
+    },
+    "cloneVM": {
+        "template": "bradVmOva2",
+        "vm_name": "anzieVm",
+        "datastore_name": "datastore1",
+        "datacenter_name": "ha-datacenter",
+        "vm_folder": "",
+        "cluster_name": "",
+        "resource_pool": "",
+        "power_on": true,
+        "datastorecluster_name": "",
+        "opaque_network_name": ""
+    },
+    "destroyVM": {
+        "vm_name": "anzieVmISO"
+    },
+    "getAllVM": {
+        "find": null
+    },
+    "rebootVM": {
+        "uuid": "526c63ef-ebed-97c1-7b1a-27ee39ad1f30",
+        "vm_ip": null
+    }
+}
